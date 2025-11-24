@@ -16,16 +16,15 @@ REBONIZER is a Flask-based web tool for bulk scraping and exporting student resu
 ## Screenshots
 
 ### Light Theme UI
-![Light Theme UI](screenshots/ui-light.png)
+![Light Theme UI](screenshots/1.png)
 
-### Dark Theme UI
-![Dark Theme UI](screenshots/ui-dark.png)
+###  INPUT DATA 
+![Dark Theme UI](screenshots/2.png)
 
-### Progress Bar in Action
-![Progress Bar](screenshots/progress.png)
+
 
 ### Sample Exported Excel
-![Excel Export](screenshots/excel-sample.png)
+![Excel Export]()
 
 *(Add your own screenshots to the `screenshots/` folder for these placeholders.)*
 
@@ -62,21 +61,24 @@ text- Access at `http://127.0.0.1:5000`
 
 **Note**: Use responsibly – respect website ToS and rate limits. Headless Chrome runs in background.
 
-## Project Structure
 rebonizer/
-├── app.py                 # Flask app & routes
-├── scraper.py             # Selenium scraping & Excel gen
+├── app.py                 # Main Flask app entrypoint
+├── scraper.py             # Selenium scraper logic
 ├── requirements.txt       # Dependencies
-├── .gitignore            # Git ignores
+├── .gitignore            # Git ignore rules
 ├── README.md             # This file
 ├── templates/
-│   └── index.html        # UI template
+│   └── index.html        # Main UI template
 └── static/
-├── css/
-│   └── style.css     # Styles
-└── js/
-└── script.js     # Client-side JS
-└── screenshots/          # UI/Output images
+    ├── css/
+    │   └── style.css     # Extracted CSS
+    └── js/
+        └── script.js     # Extracted JS
+└── screenshots/          # Folder for README images (add your own)
+    ├── ui-light.png      # Placeholder: Light theme UI
+    ├── ui-dark.png       # Placeholder: Dark theme UI
+    ├── progress.png      # Placeholder: Progress bar in action
+    └── excel-sample.png  # Placeholder: Sample exported Excel
 text## Contributing
 - Fork, PR, or issues welcome!
 - Tech: Python 3.8+, Flask, Selenium.
