@@ -61,24 +61,29 @@ text- Access at `http://127.0.0.1:5000`
 
 **Note**: Use responsibly – respect website ToS and rate limits. Headless Chrome runs in background.
 
+## Project Structure
+
+```
 rebonizer/
 ├── app.py                 # Main Flask app entrypoint
 ├── scraper.py             # Selenium scraper logic
 ├── requirements.txt       # Dependencies
-├── .gitignore            # Git ignore rules
-├── README.md             # This file
+├── .gitignore             # Git ignore rules
+├── README.md              # This file
 ├── templates/
-│   └── index.html        # Main UI template
+│   └── index.html         # Main UI template
 └── static/
     ├── css/
-    │   └── style.css     # Extracted CSS
+    │   └── style.css      # Extracted CSS
     └── js/
-        └── script.js     # Extracted JS
-└── screenshots/          # Folder for README images (add your own)
-    ├── ui-light.png      # Placeholder: Light theme UI
-    ├── ui-dark.png       # Placeholder: Dark theme UI
-    ├── progress.png      # Placeholder: Progress bar in action
-    └── excel-sample.png  # Placeholder: Sample exported Excel
+        └── script.js      # Extracted JS
+└── screenshots/           
+    ├── ui-light.png       # Placeholder UI
+    ├── ui-dark.png
+    ├── progress.png
+    └── excel-sample.png
+```
+
 text## Contributing
 - Fork, PR, or issues welcome!
 - Tech: Python 3.8+, Flask, Selenium.
