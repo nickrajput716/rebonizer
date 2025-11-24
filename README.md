@@ -23,16 +23,14 @@ REBONIZER is a Flask-based web tool for bulk scraping and exporting student resu
 
 
 
-### Sample Exported Excel
-![Excel Export](https://github.com/nickrajput716/rebonizer/blob/main/HP_Results_22010203001_to_22010203032.xlsx)
 
-*(Add your own screenshots to the `screenshots/` folder for these placeholders.)*
+
 
 ## Installation
 
 1. Clone the repo:
-git clone https://github.com/yourusername/rebonizer-v7.git
-cd rebonizer-v7
+git clone https://github.com/nickrajput716/rebonizer.git
+cd rebonizer
 text2. Create a virtual environment (recommended):
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
