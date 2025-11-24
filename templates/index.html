@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REBONIZER v7 | COBRA TECH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body data-theme="light">
+    <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <div class="container">
+        <header>
+            <div class="ct-badge">
+                <i class="fas fa-dragon"></i> COBRA TECH
+            </div>
+            <h1>REBONIZER</h1>
+            <p>HP Result Bulk Loader</p>
+        </header>
+
+        <div class="card">
+            <div class="form-group">
+                <label>Result Page URL</label>
+                <textarea id="result_url" rows="3" placeholder="https://himturesult.indiaresults.com/hp/himtu/..."></textarea>
+            </div>
+
+            <div class="grid">
+                <div class="form-group">
+                    <label>Start Roll Number</label>
+                    <input type="text" id="start_roll" placeholder="22010203001">
+                </div>
+                <div class="form-group">
+                    <label>End Roll Number</label>
+                    <input type="text" id="end_roll" placeholder="22010203050">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Delay Between Requests (Recommended: 3.5s)</label>
+                <input type="number" id="delay" value="3.5" step="0.5" min="2" max="10">
+            </div>
+
+            <button class="btn" id="submitBtn">LAUNCH REBONIZER </button>
+
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Cobra Engine Warming Up...</div>
+            </div>
+
+            <div class="alert alert-success" id="success"></div>
+            <div class="alert alert-error" id="error"></div>
+        </div>
+
+        <footer>
+            © 2025 <span class="ct-footer">CT</span> — Official REBONIZER v7<br>
+            <small>Made with <i class="fas fa-heart" style="color:#ef4444"></i> by Nikhil Rana</small>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
