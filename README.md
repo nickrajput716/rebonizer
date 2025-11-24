@@ -24,7 +24,7 @@ REBONIZER is a Flask-based web tool for bulk scraping and exporting student resu
 
 
 ### Sample Exported Excel
-![Excel Export]()
+![Excel Export](https://github.com/nickrajput716/rebonizer/blob/main/HP_Results_22010203001_to_22010203032.xlsx)
 
 *(Add your own screenshots to the `screenshots/` folder for these placeholders.)*
 
